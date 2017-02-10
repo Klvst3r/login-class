@@ -1,7 +1,7 @@
 <?php
 
-class connection{
-	function connect(){
+class conexion{
+	function conectar(){
 		return mysqli_connect("localhost","dev","desarrollo");
 	}
 }
@@ -9,8 +9,8 @@ class connection{
 * Verification of Database Connection
 * 
 
-$cnn = new connection();
-if($cnn->connect()){
+$cnn = new conexion();
+if($cnn->conectar()){
 	echo "Connected";
 }
 else{
